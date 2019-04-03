@@ -8,8 +8,8 @@ const config = require('config');
 
 
   const db = "mongodb://<Ahmed>:<1234>@stitch.mongodb.com:27020/?authMechanism=PLAIN&authSource=%24external&ssl=true&appName=ahmed-vgcyz:mongodb-atlas:local-userpass";
-mongoose.connect('mongodb://localhost/playground',{ useNewUrlParser: true })
-  .then(()=> console.log('connected to MongoDB...'))
+mongoose.connect(db,{ useNewUrlParser: true })
+  .then(()=> console.log(`connected to MongoDB...${db}`))
   .catch(err => console.log('could not connect to mogodb', errs));
 
 
