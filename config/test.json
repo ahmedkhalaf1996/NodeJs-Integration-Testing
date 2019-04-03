@@ -1,5 +1,5 @@
 {
   "jwtPrivateKey": "1234",
-  "db": "mongodb+srv://Ahmed:<1234>@cluster0-vozhb.mongodb.net/test?retryWrites=true"
+  "db": "mongodb+srv://Ahmed:1234@cluster0-vozhb.mongodb.net/test?retryWrites=true"
 }
 
