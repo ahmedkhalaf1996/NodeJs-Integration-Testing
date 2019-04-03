@@ -11,7 +11,7 @@ const config = require('config');
   const db = "mongodb://Ahmed:1234@cluster0-shard-00-00-vozhb.mongodb.net:27017,cluster0-shard-00-01-vozhb.mongodb.net:27017,cluster0-shard-00-02-vozhb.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true";
 mongoose.connect(db)
   .then(()=> console.log(`connected to MongoDB...${db}`))
-  .catch(err => console.log('could not connect to mogodb', errs));
+  .catch(err => console.log('could not connect to mogodb', err));
 
 
 require('./startup/logging')();
