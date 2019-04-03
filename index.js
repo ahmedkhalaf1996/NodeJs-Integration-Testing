@@ -2,6 +2,15 @@ const winston = require('winston');
 const express = require('express');
 const app = express();
 
+const mongoose = require('mongoose');
+const config = require('config');
+
+  const db = "mongodb+srv://Ahmed:1234@cluster0-vozhb.mongodb.net/test?retryWrites=true";
+mongoose.connect('mongodb://localhost/playground',{ useNewUrlParser: true })
+  .then(()=> console.log('connected to MongoDB...'))
+  .catch(err => console.log('could not connect to mogodb', errs));
+
+
 require('./startup/logging')();
 require('./startup/routes')(app);
 //require('./startup/db')();
@@ -14,4 +23,3 @@ const server = app.listen(port, () => winston.info(`Listening on port ${port}...
 
 module.exports = server;
 
-return "hellow worled"
