@@ -8,7 +8,7 @@ const config = require('config');
 
 //mongodb://<USERNAME>:<PASSWORD>@stitch.mongodb.com:27020/?authMechanism=PLAIN&authSource=%24external&ssl=true&appName=ahmed-vgcyz:mongodb-atlas:local-userpass
 
-  const db = "mongodb+srv://ahmed:1234>@cluster0-vozhb.mongodb.net";
+  const db = "mongodb+srv://ahmed:1234>@cluster0-vozhb.mongodb.net/test";
   mongoose.connect(db)
   .then(()=> console.log(`connected to MongoDB...${db}`))
   .catch(err => console.log('could not connect to mogodb', err));
